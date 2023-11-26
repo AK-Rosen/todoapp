@@ -1,0 +1,20 @@
+<!-- todo_list/todo_app/templates/todo_app/todolist_form.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>{{ title }}</h3>
+<div class= "">
+    <div>
+        <form class="new-item-field d-flex flex-column align-items-center" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="btn-container d-flex col-12 align-items-center flex-column flex-sm-row justify-content-center">
+                <button type="submit" class="btn-lg btn-success">Submit</button>
+                <button class="btn-lg btn-default" onclick="location.href='{% url "index" %}';">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

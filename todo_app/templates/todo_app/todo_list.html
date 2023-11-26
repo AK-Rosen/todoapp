@@ -1,0 +1,30 @@
+<!-- todo_list/todo_app/templates/todo_app/todo_list.html -->
+{% extends "base.html" %} {% block content %}
+<div class="to-do-list-edit-container d-flex flex-column align-items-center">
+  <div>
+    <h5 class="list-title">{{ todo_list.title | upper }}</h5>
+  </div>
+  <ul>
+    {% for todo in object_list %}
+    <li>
+      {% if todo.completed %}
+          <div  div class="to-do-list-item task-complete" role="button" onclick="location.href= '{% url "item-update" todo_list.id todo.id %}'">
+      {% else %}
+          <div  div class="to-do-list-item" role="button" onclick="location.href= '{% url "item-update" todo_list.id todo.id %}'">
+      {% endif %}
+       
+      {{ todo.title }} (Due {{ todo.due_date | date:"l, F j" }})
+        </div>
+    </li>
+    {% empty %}
+    <p>There are no to-do items in this list.</p>
+    {% endfor %}
+  </ul>
+</div>
+<div class="btn-container d-flex col-12 align-items-center flex-column flex-sm-row justify-content-center">
+  <button class="btn-lg btn-success" onclick="location.href='{% url "item-add" todo_list.id %}';">Add a New Item</button>
+  {# <button class="btn-lg btn-default" onclick="location.href='{% url "list-delete" pk=todo_list.id %}';">Delete This List</button> #}
+  <input class="btn-lg btn-default" value="Delete This List" type="button" onclick="location.href= '{% url "list-delete" todo_list.id %}'" />
+  <button class="btn-lg btn-default" onclick="location.href='{% url "index" %}';">Back</button>
+</div>
+{% endblock %}
