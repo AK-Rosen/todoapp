@@ -10,10 +10,10 @@
 # INSTALLATION/RUNNING
 
     Assuming all of the above versions have been correctly installed and configured:
-    - clone the repo into a directory of your choosing: https://github.com/AK-Rosen/todoapp.git
+    - clone the repo into a directory of your choosing (todoapp is a sample name): git clone https://github.com/AK-Rosen/todoapp.git todoapp
     - Navigate to the root of the project where the Dockerfile lives
     - run `docker build -t todoapp .`
-    - then run docker run -p 8000:8000 todoapp
+    - then run `docker run -p 8000:8000 todoapp`
     - in any browser, navigate to `http://localhost:8000/`
     - the application should be running
 
