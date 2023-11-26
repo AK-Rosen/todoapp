@@ -1,11 +1,11 @@
 # VERSIONS
 
-Node - 21.2.0
-NPM - 10.2.3
-Python 3.12.0
-Django - 3.2.9
-Docker - 4.25.2
-Sass - 1.69.5 (using brew)
+- Node - 21.2.0
+- NPM - 10.2.3
+- Python 3.12.0
+- Django - 3.2.9
+- Docker - 4.25.2
+- Sass - 1.69.5 (using brew)
 
 # INSTALLATION/RUNNING
 
