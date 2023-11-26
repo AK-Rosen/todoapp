@@ -1,5 +1,3 @@
-# App setup tutorial: https://realpython.com/django-todo-lists/#step-1-set-up-your-virtual-environment-and-django
-
 # VERSIONS
 
 Node - 21.2.0
@@ -18,3 +16,7 @@ Sass - 1.69.5 (using brew)
     - then run docker run -p 8000:8000 todoapp
     - in any browser, navigate to `http://localhost:8000/`
     - the application should be running
+
+# Original app source
+
+https://realpython.com/django-todo-lists/#step-1-set-up-your-virtual-environment-and-django
