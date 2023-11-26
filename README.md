@@ -10,7 +10,7 @@
 # INSTALLATION/RUNNING
 
     Assuming all of the above versions have been correctly installed and configured:
-
+    - clone the repo into a directory of your choosing: https://github.com/AK-Rosen/todoapp.git
     - Navigate to the root of the project where the Dockerfile lives
     - run `docker build -t todoapp .`
     - then run docker run -p 8000:8000 todoapp
