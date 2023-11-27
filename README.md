@@ -21,3 +21,12 @@ https://nsgov.github.io/patternlibrary/
     - Then run `docker run -p 8000:8000 todoapp`
     - In any browser, navigate to `http://localhost:8000/`
     - The application should be running
+
+# Unit Tests
+
+    A few unit tests ship with this code. They cover the following scenarios
+    - Verify that the main list of lists page is reachable
+    - Verify that a successful redirect occurs when a list is created/deleted
+    - Verify Items can be viewed
+    - Verify that creating/updating/deleting items correctly redirets to respective pages
+    - To execute the test, navigate to the directory where manage.py is located and run `python3 manage.py test todo_app.tests`
