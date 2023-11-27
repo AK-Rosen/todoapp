@@ -29,4 +29,7 @@ https://nsgov.github.io/patternlibrary/
     - Verify that a successful redirect occurs when a list is created/deleted
     - Verify Items can be viewed
     - Verify that creating/updating/deleting items correctly redirets to respective pages
-    - To execute the test, navigate to the directory where manage.py is located and run `python3 manage.py test todo_app.tests`
+    - To execute the tests, navigate to the directory where manage.py is located
+    - run docker ps to get the docker container ID
+    - run docker exec -it "container ID" /bin/bash
+    - run `python3 manage.py test todo_app.tests`
