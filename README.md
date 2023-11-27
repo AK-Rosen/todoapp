@@ -7,12 +7,17 @@
 - Docker - 4.25.2
 - Sass - 1.69.5 (using brew)
 
+# Sources
+
+https://nsgov.github.io/patternlibrary/
+
 # INSTALLATION/RUNNING
 
     Assuming all of the above versions have been correctly installed and configured:
-    - clone the repo into a directory of your choosing (todoapp is a sample name): git clone https://github.com/AK-Rosen/todoapp.git todoapp
+    - Download and install Docker
+    - Clone the repo into a directory of your choosing (todoapp is a sample name): git clone https://github.com/AK-Rosen/todoapp.git todoapp
     - Navigate to the root of the project where the Dockerfile lives
-    - run `docker build -t todoapp .`
-    - then run `docker run -p 8000:8000 todoapp`
-    - in any browser, navigate to `http://localhost:8000/`
-    - the application should be running
+    - Run `docker build -t todoapp .`
+    - Then run `docker run -p 8000:8000 todoapp`
+    - In any browser, navigate to `http://localhost:8000/`
+    - The application should be running
