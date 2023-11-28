@@ -15,6 +15,7 @@ https://nsgov.github.io/patternlibrary/
 
     Assuming all of the above versions have been correctly installed and configured:
     - Download and install Docker
+    - Download and install python3
     - Clone the repo into a directory of your choosing (todoapp is a sample name): git clone https://github.com/AK-Rosen/todoapp.git todoapp
     - Navigate to the root of the project where the Dockerfile lives
     - Run `docker build -t todoapp .`
